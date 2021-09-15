@@ -12,3 +12,14 @@ const toArray = (...args) => {
     return args
 }
 console.log(toArray(1,2,3,4,5,6))
+
+const person = {
+    name: 'Bakyt',
+    age: 35,
+    greet() {
+        console.log(this.name)
+    }
+}
+
+const { name, age } = person
+console.log(name, age)
