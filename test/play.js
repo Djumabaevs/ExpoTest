@@ -23,3 +23,9 @@ const person = {
 
 const { name, age } = person
 console.log(name, age)
+
+setTimeout(() => {
+    console.log('Timer is done!')
+}, 2000)
+
+console.log('Hello timer!')
