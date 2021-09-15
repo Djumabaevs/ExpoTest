@@ -30,10 +30,14 @@ console.log(name, age)
 
 // console.log('Hello timer!')
 
-const fetchData = callback => {
-    setTimeout(() => {
-        callback('Done!')
-    }, 1500)
+const fetchData = () => {
+    const promise = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve('Done!')
+        }, 1500)
+    })
+    return promise
+
 }
 
 setTimeout(() => {
@@ -42,3 +46,4 @@ setTimeout(() => {
         console.log(text)
     })
 }, 2000)
+
